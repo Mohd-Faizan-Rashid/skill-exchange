@@ -1,5 +1,5 @@
 {
-  "name": "mutual-skill-exchange",
+  "name": "skill-exchange",
   "version": "1.0.0",
   "description": "Peer-to-peer skill exchange platform",
   "type": "module",
@@ -25,6 +25,7 @@
     "lucide-react": "0.554.0",
     "tailwind-merge": "3.4.0",
     "tailwindcss-animate": "1.0.7"
+    "express": "^4.17.1"
   },
   "devDependencies": {
     "@types/react": "19.2.6",
