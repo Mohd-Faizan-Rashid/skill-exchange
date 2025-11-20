@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mutual Skill Exchange - Learn & Share Skills</title>
+    <meta name="description" content="Exchange skills for free with peers in your community. Learn new abilities while teaching others.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="navbar-container">
+            <div class="logo">
+                <div class="logo-icon">⟡</div>
+                <span>SkillSwap</span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li class="nav-link active" onclick="navigate('home')">Home</li>
+                <li class="nav-link" onclick="navigate('discover')">Discover</li>
+                <li class="nav-link" onclick="navigate('connections')">Connections</li>
+                <li class="nav-link" onclick="navigate('messages')">Messages</li>
+            </ul>
+            <div class="user-menu" id="userMenu"></div>
+        </div>
+    </nav>
+
+    <div id="root"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
