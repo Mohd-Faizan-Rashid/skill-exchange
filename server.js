@@ -9,8 +9,23 @@ import dotenv from 'dotenv';
 import { fileURLToPath } from 'url';
 
 dotenv.config();
+const express = require('express');
+const path = require('path');
+const app = express();
+const port = process.env.PORT || 5000;
 
-const PORT = process.env.PORT || 5000;
+// Serve static files from the 'public' directory
+app.use(express.static(path.join(__dirname, 'public')));
+
+// For any other routes, serve the index.html file
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
+
+app.listen(port, () => {
+  console.log(`Server running on port ${port}`);
+});
+
 const JWT_SECRET = process.env.JWT_SECRET || 'your-secret-key-change-in-production';
 
 const __filename = fileURLToPath(import.meta.url);
